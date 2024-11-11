@@ -1,0 +1,8 @@
+{
+    "require": {
+        "kreait/firebase-php": ">7.13.0",
+        "grpc/grpc": "^1.38",
+        "google/cloud-firestore": "^1.46",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
