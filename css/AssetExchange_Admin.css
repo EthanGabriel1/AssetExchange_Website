@@ -1,0 +1,323 @@
+/* General CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F2F0EE;
+    min-height: 100vh;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    backdrop-filter: blur(5px);
+    z-index: 1100;
+  }
+  
+  .logo-img {
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  .txt_AssetEx {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #303030;
+    font-size: 30px;
+  }
+  
+  
+  .btn.active {
+    background-color: #dc3545; /* Red color for active deactivate button */
+    color: white;
+}
+  
+  .sidebar-title {
+  margin-left: 10px;
+  color: #313131;
+  font-family: "Inter", Helvetica;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+  
+  
+  .search-bar {
+    margin-left: 85px;
+    width: 40%;
+    height: 42px;
+    border-radius: 24px;
+    background: #FEFEFE;
+  }
+  
+ 
+  /* Custom style for the search bar placeholder */
+        .search-bar::placeholder {
+            padding-left: 15px; /* Move the placeholder text 15px to the right */
+        }
+ 
+  
+  .ic_profile {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .txt_Username {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  
+  .ic_settings {
+    height: 30px;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    height: 100vh;
+    padding-top: 20px;
+  }
+  
+  
+  
+  .sidebar .nav-link {
+    font-size: 16px;
+    color: #303030;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar .nav-link:hover {
+    border-bottom: 3px solid #FF5E49;
+  }
+  
+  /* Main content styling */
+  .main-content {
+    background-color: #fff;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-content h2 {
+    outline: 1px rebeccapurple solid;
+  }
+  
+  
+  .card {
+      transition: transform .2s; /* Animation */
+  }
+  
+  
+  .card:hover {
+      transform: scale(1.2);
+  }
+  
+  
+  .sidebar-heading {
+      font-size: 14px;
+      font-weight: bold;
+      color: #8C8C8C;
+      margin: 15px 0 5px 10px; /* Adjust margins as needed */
+  }
+  
+  
+  .toggle-btn {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    .toggle-btn button {
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .toggle-btn .activate {
+        background-color: green;
+        color: white;
+    }
+
+    .toggle-btn .deactivate {
+        background-color: grey;
+        color: white;
+    }
+
+    .toggle-btn.active .activate {
+        background-color: grey; /* Changed to grey when deactivated */
+    }
+
+    .toggle-btn.active .deactivate {
+        background-color: red; /* Changed to red when activated */
+    }
+
+    .deactivated {
+        background-color: grey; /* Default style for inactive buttons */
+        color: white;
+    }
+  
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .search-bar {
+      width: 100%;
+    }
+  
+    .txt_Username,
+    .ic_profile,
+    .ic_settings {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+  
+    .sidebar .nav-link {
+      font-size: 14px;
+    }
+  
+    .txt_AssetEx {
+      font-size: 24px;
+    }
+  }
+  
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F2F0EE;
+    min-height: 100vh;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    backdrop-filter: blur(5px);
+    z-index: 1100;
+  }
+  
+  .logo-img {
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  .txt_AssetEx {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #303030;
+    font-size: 30px;
+  }
+  
+  
+  .sidebar-title {
+  margin-left: 10px;
+  color: #313131;
+  font-family: "Inter", Helvetica;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+  
+  
+  .search-bar {
+    margin-left: 85px;
+    width: 40%;
+    height: 42px;
+    border-radius: 24px;
+    background: #FEFEFE;
+  }
+  
+  
+  .ic_profile {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .txt_Username {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  
+  .ic_settings {
+    height: 30px;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    height: 100vh;
+    padding-top: 20px;
+  }
+  
+  
+  
+  .sidebar .nav-link {
+    font-size: 16px;
+    color: #303030;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar .nav-link:hover {
+    border-bottom: 3px solid #FF5E49;
+  }
+  
+  /* Main content styling */
+  .main-content {
+    background-color: #fff;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-contnet h2 {
+    outline: 1px rebeccapurple solid;
+  }
+  
+  
+  .sidebar-heading {
+      font-size: 14px;
+      font-weight: bold;
+      color: #8C8C8C;
+      margin: 15px 0 5px 10px; /* Adjust margins as needed */
+  }
+  
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .search-bar {
+      width: 100%;
+    }
+  
+    .txt_Username,
+    .ic_profile,
+    .ic_settings {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+  
+    .sidebar .nav-link {
+      font-size: 14px;
+    }
+  
+    .txt_AssetEx {
+      font-size: 24px;
+    }
+  }
+  
